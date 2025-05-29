@@ -510,7 +510,7 @@ def plot_features_in_2d(
             for feature_idx in range(n_feats):
                 x, y = W[t][instance_idx][feature_idx].tolist()
                 lines[instance_idx][feature_idx].set_data([0, x], [0, y])
-                markers[instance_idx][feature_idx].set_data(x, y)
+                markers[instance_idx][feature_idx].set_data([0, x], [0, y])
                 lines[instance_idx][feature_idx].set_color(colors[t][instance_idx][feature_idx])
                 markers[instance_idx][feature_idx].set_color(colors[t][instance_idx][feature_idx])
             if title:
